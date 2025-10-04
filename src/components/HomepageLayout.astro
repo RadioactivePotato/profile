@@ -34,10 +34,10 @@ import SEO from '../components/SEO.astro'
 		window.rainbowMode = rainbowToggle.checked
 		rainbowToggle.addEventListener('input', () => window.rainbowMode = rainbowToggle.checked)
 		
-		const kognise = new Audio('/kognise.mp3')
+		const pronounce = new Audio('/krunch.mp3')
 		document.getElementById('ipa').addEventListener('click', () => {
-			kognise.currentTime = 0
-			kognise.play()
+			pronounce.currentTime = 0
+			pronounce.play()
 		})
 	</script>
 

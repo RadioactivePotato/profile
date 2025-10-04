@@ -23,9 +23,9 @@ const {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
-<title>{title ? `${title} | Kognise` : 'Kognise!'}</title>
-<meta property='og:title' content={title ?? 'Kognise'} />
-<meta property='og:site_name' content='Kognise' />
+<title>{title ? `${title} | krunch` : 'krunch'}</title>
+<meta property='og:title' content={title ?? 'krunch'} />
+<meta property='og:site_name' content='krunch' />
 
 <meta name='description' content={description} />
 <meta property='og:description' content={description}>
@@ -40,24 +40,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 
 <meta name='robots' content='index,follow' />
 <meta name='googlebot' content='index,follow' />
-<meta name='twitter:card' content='summary_large_image' />
-<meta name='twitter:site' content='@kognise' />
-<meta name='twitter:creator' content='@kognise' />
 <meta property='og:type' content={article ? 'article' : 'website'} />
 <meta property='og:locale' content='en_US' />
 
-<meta name='keywords' content='kognise,website,personal,portfolio,projects,about,contact,info,developer,designer,resume' />
+<meta name='keywords' content='krunch,radioactivepotato,website,personal,portfolio,projects,about,contact,info,developer' />
 <meta name='theme-color' content='#0e7dde' />
-<link rel='icon' href='https://media.kognise.dev/logos/pfp.png' />
+<link rel='icon' href='https://example.com/logos/pfp.png' />
 
 <link rel='sitemap' href='/sitemap-index.xml' />
 
 {article ? (
 	<meta property='article:published_time' content={article.published} />
-	<meta property='article:author:first_name' content='Lexi' />
-	<meta property='article:author:last_name' content='Mattick' />
-	<meta property='article:author:username' content='Kognise' />
-	<meta property='article:author:gender' content='female' />
+	<meta property='article:author:first_name' content='krunchie' />
+	<meta property='article:author:last_name' content='krunch' />
+	<meta property='article:author:username' content='krunch' />
+	<meta property='article:author:gender' content='male' />
 	
 	<script type='application/ld+json'>
 		{JSON.stringify({
@@ -77,8 +74,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 			'author': [
 				{
 					'@type': 'Person',
-					'name': 'Lexi Mattick',
-					'url': 'https://kognise.dev/'
+					'name': 'krunchie krunch',
+					'url': 'https://krunchie.xyz/'
 				}
 			]
 		})}
