@@ -18,7 +18,9 @@ import BackgroundEffect from '../components/BackgroundEffect.astro'
 	<img
     		src="https://lanyard.cnrad.dev/api/1166013268008120340?showDisplayName=true&bg=transparent&theme=light"
     		alt="Discord RPC via lanyard"
-    		style={{ height: "200px", width: "auto" }}
+    		style={{ height: "200px", width: "auto", pointerEvents: "none", userSelect: "none" }}
+			onContextMenu={(e) => e.preventDefault()}
+			draggable="false"
 	/>
 
 	On this page:
